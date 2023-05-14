@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto conferencia</title>
+        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+
+    </head>
+    <!--Estilos en linea-->
+    <body class="body" id="body">
+           
+       
+        <header class="header">
+            <div class="logo-cac">
+                <img src="./assets/img/codoacodo.png" alt="Logo de codo a codo">
+                <h2>Conf. Bs As.</h2>
+            </div>
+            
+            <nav>
+                <ul class="lista-nav">
+                    <li class="item-blanco">
+                        <a href="#conferencia">La conferencia</a>
+                    </li> 
+                    <li>
+                        <a href="#section-oradores">Los oradores</a>
+                    </li> 
+                    <li>  
+                        <a href="#lugar-fecha">El lugar y la fecha</a>
+                    </li> 
+                    <li>
+                        <a href="#conviertete">Conviertete en orador</a>
+                    </li> 
+                    <li class="item-verde">
+                        <a href="./pages/comprar_tickets.html">Comprar tickets</a>
+                    </li> 
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <!--contenedor imagen de fondo portada -->
+
+            <section class="conferencia" id="conferencia">
+                <div class="texto-conferencia">
+                     <h1>Conferencia de Buenos Aires</h1>
+                     <p class="p-conferencia">Conferencia Buenos Aires llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad, el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos !  
+                    </p>
+                    <div class="btns-conferencia">
+                        <a class="btn-orador" href="#">Quiero ser orador</a>
+                        <a class="btn-tickets" href="#">Comprar tickets</a>
+                    </div>
+                </div>
+            </section>
+                             
+        
+
+<!-- ********************* SECCION CARDS ******************-->
+
+            <section class="section-oradores" id="section-oradores">
+                <!--Etiqueta contenedora en linea, hermana del div SPAN-->
+                <p>CONOCE A LOS</p>
+                <h1> ORADORES</h1>
+
+               <div class="cards">
+                    <div class="card">
+                        <img src="./assets/img/steve.jpg" alt="Foto de Steve Jobs">
+                        <div class="btn-card">
+                            <button class="btn-java">JavaScript</button>
+                            <button class="btn-react">React</button>
+                        </div>
+                        <div class="text-card">
+                            <h3 class="titulo-card">Steve Jobs</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem iusto obcaecati, eaque quae, nisi illo doloremque quas, nihil dolorem dolorum commodi sit beatae inventore.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/bill.jpg" alt="Foto de Bill Gates">
+                        <div class="btn-card">
+                            <button class="btn-java">JavaScript</button>
+                            <button class="btn-react">React</button>
+                        </div>
+                        <div class="text-card">
+                            <h3 class="titulo-card">Bill Gates</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem iusto obcaecati, eaque quae, nisi illo doloremque quas, nihil dolorem dolorum commodi sit beatae inventore.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/ada.jpeg" alt="Foto de Ada Lovelace">
+                        <div class="btn-card">
+                            <button class="btn-negocios">Negocios</button>
+                            <button class="btn-startups">Startups</button>
+                        </div>
+                        <div class="text-card">
+                            <h3 class="titulo-card">Ada Lovelace</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem iusto obcaecati, eaque quae, nisi illo doloremque quas, nihil dolorem dolorum commodi sit beatae inventore.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!-- ****************SECCION FOTO HONOLULU Y TEXTO ************-->
+
+            <div class="lugar-fecha" id="lugar-fecha">
+                    <div class="img-playa">
+                        <img src="./assets/img/honolulu.jpg" alt="Imagen playa dividida">
+                    </div>
+
+                    <div class="text-playa">
+                        <h2>Buenos Aires - Octubre</h2>
+                        <p>Buenos Aires es la provincia y localidad más grande del estado de Argenitna, en los Estados Unidos. Honolulu es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-concado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
+                        <a class="conoce-mas" href="">Conocé más</a>
+                    </div>
+            </div>
+            
+            
+
+<!-- ************* SECCION FORMULARIO ORADOR ******************-->
+                        
+            <div class="conviertete" id="conviertete">
+                <div class="titulo-conviertete">
+                    <h6>CONVIÉRTETE EN UN </h6>
+                    <h3>ORADOR</h3>
+                </div>
+
+                <p class="texto-orador">Anótate como orador para dar una charla ignite. Cuéntanos, de qué quieres hablar!</p>
+                
+
+                    <div class="formulario">
+
+                        <div class="nombre-input">
+                            <input type="text" placeholder="Nombre" required>
+                            <input type="text" placeholder="Apellido" required>
+                        </div>
+                        
+                        <textarea class="textarea" cols="44" rows="6" placeholder="Sobre que quieres hablar?" required></textarea>
+                        
+                        <p>Recuerda incluir un titulo para tu charla</p>
+
+                        <button class="btn-enviar" type="submit">Enviar</button>
+                    
+                    </div>
+            </div>
+            
+        </main>
+        <footer>
+            <div class="footer">
+                    <a href="">Preguntas<br>frecuentes</a>        
+                    <a href="">Contactanos </a>
+                    <a href="">Prensa</a>
+                    <a href="">Conferencias</a>
+                    <a href="">Terminos y<br>condiciones</a>
+                    <a href="">Privacidad</a>
+                    <a href="">Estudiantes</a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-beat icon"></i></a>
+            </div>
+
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Work+Sans:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+/*-------------HEADER-----------*/
+.header{
+    background-color: rgb(70, 70, 70);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.lista-nav {
+    list-style: none;
+    text-decoration: none;
+    margin-right: 4rem;
+    display: flex;
+    justify-items: space-between; 
+}
+
+.lista-nav li a {
+    color: #9a9ea1;
+    padding: 0 0.5rem;
+    text-decoration: none;
+}
+
+.lista-nav .item-blanco a{
+    color: white ;
+}
+
+.lista-nav .item-verde a {
+    color: #2ba844;
+}
+
+.logo-cac{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 4rem;
+    
+}
+
+.logo-cac h2{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.logo-cac img{
+    width: 90px;
+}
+
+
+
+
+/*-------------MAIN-------------*/
+
+.conferencia {
+    background:linear-gradient(to right, #0000009c,#00000053 ),url("../assets/img/ba1.jpg" );
+    background-size: cover;
+    height: 90vh;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.texto-conferencia {
+    width: 50%;
+    height: 50%;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    }
+
+.texto-conferencia h1{
+    color:white;
+    text-align: right;
+    font-size: 2rem;
+    font-style: bold;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+    }
+
+.p-conferencia {
+    color:white;
+    text-align: right;
+    font-size: 15px;
+    margin: 1rem 0;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+       
+    }
+
+.btns-conferencia {
+    display: flex;
+    justify-content: right;
+}
+
+.btn-orador {
+    color: white;
+    border: 0.8px solid white;
+    border-radius: 6px;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+    
+    
+}
+
+.btn-tickets {
+    background-color: rgb(30, 111, 15);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 0.5rem;
+    text-decoration: none;
+    margin-left: 20px;
+    box-shadow: 9px 10px 25px 4px rgba(0, 0, 0, 0.547);
+-webkit-box-shadow: 9px 10px 25px 4px rgba(0, 0, 0, 0.556);
+-moz-box-shadow: 9px 10px 25px 4px rgba(0, 0, 0, 0.495);
+}
+
+/* CONOCE A LOS ORADORES */
+
+.section-oradores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    width: 20%;
+    margin: 1rem;
+    border: 1px solid #8a8c8d7d;
+    border-radius: 5px;
+}
+
+.card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.text-card{
+    margin: 15px;
+    text-align: left;
+}
+
+.titulo-card {
+    font-size: 1.3rem;
+    font-weight: 550;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* BOTONES CARDS */
+
+.btn-java{
+    color: black;
+    background-color: rgb(255, 204, 0);
+    border: none;
+    padding:5px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.btn-react {
+    color: rgb(255, 255, 255);
+    background-color: rgb(31, 170, 170);
+    border: none;
+    padding:5px;
+    border-radius: 5px;
+    margin-left: 3px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.btn-negocios {
+    color: rgb(255, 255, 255);
+    background-color: rgb(151, 151, 151);
+    border: none;
+    padding:5px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.btn-startups {
+    color: rgb(255, 255, 255);
+    background-color: rgb(205, 27, 27);
+    border: none;
+    padding:5px;
+    border-radius: 5px;
+    margin-left: 3px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* BOTON WSP */
+
+.icon {
+    color: rgb(0, 190, 0);
+    font-size: 4rem;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* -----------------FOTO PLAYA------------*/
+
+.lugar-fecha{
+    display: flex;
+    margin: 1rem 0;
+    background-color: #353a40;
+}
+
+.img-playa{
+    width: 50%;
+    
+}
+
+.text-playa{
+    color: white;
+    width: 50%;
+    padding: 1rem;
+}
+
+.text-playa p{
+    margin-bottom: 30px;
+}
+
+.text-playa h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.img-playa img{
+    width: 100%;
+    height: 100%;
+}
+
+.conoce-mas{
+    color: white;
+    border: 0.8px solid white;
+    border-radius: 6px;
+    padding: 0.4rem;
+    text-decoration: none;
+}
+
+/*--------------------------FORMULARIO------------------------------------------------*/
+
+.conviertete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem ;
+}
+
+.titulo-conviertete{
+    margin-bottom: 15px;
+}
+
+.titulo-conviertete h6{
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.titulo-conviertete h3{
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.texto-orador {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.formulario {
+    width: 45%;
+    text-align: center;
+}
+
+.nombre-input {
+    display: flex;
+}
+
+.nombre-input input, .formulario textarea, .formulario button  {
+    width: 100%;
+}
+
+.formulario p{
+    font-size: 0.7rem;
+    text-align: left;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: rgb(120, 120, 120);
+}
+
+.textarea {
+    display: block;
+    font-weight: 400;
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;    
+    line-height: 1.5;
+    color: #000000;
+    appearance: none;
+    border-radius: .2rem;
+    margin: 0.5rem 0;
+}
+
+.btn-enviar {
+    background-color: rgba(150,201,62,255);
+    border: rgba(150,201,62,255);
+    border-radius: 0.3rem;
+    color: white;
+    padding: 0.5rem 0;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*---------------FOOTER--------------------*/
+
+.footer{
+    background: linear-gradient(90deg,#1d3744 0%, #1f5271 80%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.footer a {
+    color: white;
+    margin-left: 10rem;
+    text-decoration: none;
+}
+
+/*----------MEDIAQUERIES------------------------*/
+@media (max-width: 500px){
+
+    /*HEADER*/
+
+    .header{
+        flex-direction: column;
+    }
+    .lista-nav{
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+
+    .lista-nav li{
+        margin: 0.3rem
+    }
+
+    .conferencia{
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .texto-conferencia {
+        font-size: 0.8rem;
+        width: 80%;
+        padding-right: 0%;
+    }
+
+    .p-conferencia{
+        text-align: center;
+    }
+
+    .texto-conferencia h1{
+        text-align: center;
+    }
+    
+    .btns-conferencia{
+        flex-direction: column;
+    }
+    
+    .btn-tickets{
+        margin-left: 0%;
+        margin-top: 5px;
+    }
+
+   /* ORADORES */
+
+   .cards{
+        flex-direction: column;
+        align-items: center;
+   }
+   
+   .card {
+        width: 80%;
+   }
+
+   /*FOTO PLAYA*/
+   .lugar-fecha{
+    flex-direction: column;
+   }
+
+   .img-playa{
+    width: 100%;
+   }
+
+   .text-playa{
+    width: 80%;
+   }
+
+   .texto-orador{
+    text-align: center;
+   }
+
+   .formulario{
+    width: 95%;
+   }
+
+   .footer {
+    flex-direction: column;
+    align-items: left;
+   }
+
+   .footer a{
+    margin: 0%;
+    padding: 10px;
+    font-size: 0.9rem;
+    }
+   
+}
